@@ -1,0 +1,21 @@
+dawnsTab:
+    Name: Dawn MacIsaac
+    Room Number: 42
+    Amount Owed: $5.85
+luigisTab:
+    Name: Luigi Benedicenti
+    Room Number: 112
+    Amount Owed: $20.25
+nataliesTab:
+    Name: Natalie Webber
+    Room Number: 214
+    Amount Owed: $15.25
+leahsTab:
+    Name: Leah Bidlake
+    Room Number: 78
+    Amount Owed: $13.0
+
+Leah Bidlake leaves a $2.34 tip
+Natalie Webber leaves a $1.95 tip
+Dawn MacIsaac leaves a $1.17 tip
+Luigi Benedicenti leaves a $4.05 tip

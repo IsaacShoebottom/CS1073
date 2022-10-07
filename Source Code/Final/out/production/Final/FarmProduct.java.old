@@ -1,0 +1,29 @@
+public class FarmProduct {
+	private String description;
+	private double cost;
+  
+	public FarmProduct (String descIn, double costIn) {
+		description = descIn;
+		cost = costIn; 
+	}
+
+	public String getDescription () {
+		return description;
+	}
+  
+	public double getCost () {
+		return cost;
+	}
+	
+	public void setDescription (String descIn) {
+		description = descIn;
+	}
+	
+	public void setcost (double costIn) {
+		cost = costIn;
+	}
+	
+	public boolean equals (FarmProduct other) {
+		return other.description.equals(this.description) && other.cost==this.cost;
+	}
+}

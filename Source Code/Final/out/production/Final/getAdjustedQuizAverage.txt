@@ -1,0 +1,27 @@
+public static double getAdjustedQuizAverage(double[] quizScores) {
+        int lowestScorePosition=quizScores.length-1;
+
+
+        for(int i=0; i < quizScores.length; i++) {
+            if(i == quizScores.length-1)
+                break;
+
+            if (quizScores[i] < quizScores[quizScores.length-1]) {
+                lowestScorePosition = i;
+
+            }
+
+        }
+
+        quizScores[lowestScorePosition] = quizScores[quizScores.length-1];
+
+        double sum = 0;
+        for(int i=0; i < quizScores.length; i++) {
+            if(i == quizScores.length-1)
+                break;
+
+            sum += quizScores[i];
+        }
+
+        return sum/(quizScores.length-1);
+    }

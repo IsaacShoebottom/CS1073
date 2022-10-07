@@ -1,0 +1,54 @@
+Enter test score: 12
+Enter test score: 23
+Enter test score: 34
+Enter test score: 56
+Enter test score: 67
+Enter test score: 89
+Enter test score: 90
+Enter test score: 21
+Enter test score: 43
+Enter test score: 54
+Enter test score: 65
+Enter test score: 76
+Enter test score: 87
+Enter test score: 98
+Enter test score: 09
+Enter test score: 49
+Enter test score: 28
+Enter test score: 48
+Enter test score: 43
+Enter test score: 86
+Enter test score: 23
+Enter test score: 765
+Please enter a test score within the range 0-100
+Enter test score: 54
+Enter test score: 65
+Enter test score: 32
+Enter test score: 73
+Enter test score: 96
+Enter test score: 62
+Enter test score: 74
+Enter test score: 52
+Enter test score: 52
+Enter test score: 74
+Enter test score: 52
+Enter test score: 74
+Enter test score: 52
+Enter test score: 75
+Enter test score: 2
+Enter test score: 74
+Enter test score: 41
+Enter test score: 74
+Enter test score: 41
+Enter test score: 63
+Enter test score: 41
+Enter test score: -1
+Scores
+A		|******
+B		|********
+C		|******
+D		|********
+F		|**************
+		===============================
+		+         +         +         +
+		0         10        20        30

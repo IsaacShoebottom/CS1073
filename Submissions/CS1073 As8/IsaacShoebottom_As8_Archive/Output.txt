@@ -1,0 +1,42 @@
+
+*********************************
+* HARRISON FORD CUSTOMER SYSTEM *
+*********************************
+November 1, 2019
+----------------
+INVOICE	for: John Smith
+		model:  Escape
+		last visit: 1
+		next visit cost: $32.00
+
+INVOICE	for: Harold Lee
+		model:  Fiesta
+		last visit: 3
+		next visit cost: $56.00
+		months since discount: 3	(has warranty)
+
+INVOICE	for: Beth Blart
+		model:  Focus
+		last visit: 4
+		next visit cost: $68.00
+		months since discount: 4	(has warranty)
+
+November 1, 2020
+----------------
+INVOICE	for: John Smith
+		model:  Escape
+		last visit: 12
+		next visit cost: $164.00
+
+INVOICE	for: Harold Lee
+		model:  Fiesta
+		last visit: 0
+		next visit cost: $20.00
+		months since discount: 3	(has warranty)
+
+INVOICE	for: Beth Blart
+		model:  Focus
+		last visit: 12
+		next visit cost: $131.20
+		months since discount: 16	(has warranty)
+

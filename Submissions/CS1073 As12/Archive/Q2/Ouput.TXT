@@ -1,0 +1,76 @@
+*** Test case #1: Create a Tenant object & test accessors
+Name:     Maria Melani
+Appt #:   152
+Phone:    555-1234
+Member #: 10000
+Correct result: Maria has zero lending items.
+
+*** Test case #2: Create a ShortTermResidentMember object & test accessors
+Name:     Tommy Black
+Appt #:   302
+Phone:    555-4321
+Member #: 10001
+Departs: Dec. 15, 2020
+Correct result: Tommy has zero lending items.
+
+*** Test case #3: Automatically generate a member number
+Correct result: 10002 is the correct member number.
+
+*** Test case #4: Create a LendingItem object & test accessors
+Description: Lean In - Sheryl Sandberg - BOOK
+Orig. Price: $10.00
+Book Club Recommended:  true
+
+*** Test case #5: Change phone number for both Resident types
+Correct result: Maria's phone number successfully changed.
+Correct result: Tommy's phone number successfully changed.
+
+*** Test case #6: Sign out one LendingItem
+Correct result: Maria signed out an item successfully.
+Correct result: Maria has one lending item.
+
+*** Test case #7: Sign out multiple LendingItems
+Correct result: Maria signed out two more items successfully.
+Correct result: Maria has three lending items.
+
+*** Test case #8: Intentionally exceed the sign out limit
+Correct result: Maria was prevented from signing out more than 8 lending items.
+
+*** Test case #9: A short-term resident tries to sign out a recommended item
+>> ERROR: Tommy was able to sign out a book club recommended item.
+>> ERROR: Tommy was prevented from signing out a non recommended item.
+
+*** Test case #10: Returning the only item that was signed out
+Correct result: Tommy's item was successfully returned.
+Correct result: Tommy's list length changed appropriately.
+
+*** Test case #11: Returning an item that was not signed out
+Correct result: Unsuccessful attempt to return an item that was not signed out.
+
+*** Test case #12: Returning the first item that was signed out
+Correct result: Maria's first item was successfully returned.
+Correct result: Maria's list length changed appropriately.
+
+Confirm return: Lean In should be absent from the following list:
+Yoga Journal - October 2020 - MAGAZINE
+Maclean's - 23/11/2020 - MAGAZINE
+Headstrong: 52 Women Who Changed Science and the World - Rachel Swaby - BOOK
+The Time Machine - H.G. Wells - BOOK
+The Confidence Code - Katty Kay & Claire Shipman - BOOK
+The Immortal Life of Henrietta Lacks - Rebecca Skloot - BOOK
+Grit - Angela Duckworth - BOOK
+
+*** Test case #13: Returning a mid-list item
+Correct result: The Time Machine was successfully returned.
+Correct result: Maria's list length changed appropriately.
+
+Confirm return: The Time Machine should be absent from the following list:
+Yoga Journal - October 2020 - MAGAZINE
+Maclean's - 23/11/2020 - MAGAZINE
+Headstrong: 52 Women Who Changed Science and the World - Rachel Swaby - BOOK
+Grit - Angela Duckworth - BOOK
+The Confidence Code - Katty Kay & Claire Shipman - BOOK
+The Immortal Life of Henrietta Lacks - Rebecca Skloot - BOOK
+
+************* End of Test Cases ***************
+	

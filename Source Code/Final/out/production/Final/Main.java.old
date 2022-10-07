@@ -1,0 +1,36 @@
+public class Main {
+    public static void main(String[] args) {
+
+        double[] blah = new double[]{5.0, 6.5, 7.0, 4.25, 8.0, 7.5};
+        double[] blur= new double[]{7.5, 10.0, 8.0, 9.5, 6.75};
+        System.out.println(getAdjustedQuizAverage(blah));
+        System.out.println(getAdjustedQuizAverage(blur));
+    }
+    public static double getAdjustedQuizAverage(double[] quizScores) {
+        int lowestScorePosition=quizScores.length-1;
+
+
+        for(int i=0; i < quizScores.length; i++) {
+            if(i == quizScores.length-1)
+                break;
+
+            if (quizScores[i] < quizScores[quizScores.length-1]) {
+                lowestScorePosition = i;
+
+            }
+
+        }
+
+        quizScores[lowestScorePosition] = quizScores[quizScores.length-1];
+
+        double sum = 0;
+        for(int i=0; i < quizScores.length; i++) {
+            if(i == quizScores.length-1)
+                break;
+
+            sum += quizScores[i];
+        }
+
+        return sum/(quizScores.length-1);
+    }
+}

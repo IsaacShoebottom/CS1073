@@ -1,0 +1,68 @@
+public class FarmBoxCustomer {
+    static int customerNumberCurrentNumber = 10000;
+    final int customerNumber;
+    int numberOfFamilies;
+
+
+
+    public FarmBoxCustomer(int numberOfFamiliesIn) {
+        customerNumber = customerNumberCurrentNumber;
+        customerNumberCurrentNumber++;
+        numberOfFamilies = numberOfFamiliesIn;
+
+    }
+    final int maxNumberOfProducts = numberOfFamilies * 14;
+    FarmProduct[] listOfProducts = new FarmProduct[maxNumberOfProducts];
+
+    public int getInstance() {
+        return customerNumber;
+    }
+
+    public boolean addProduct(FarmProduct productIn) {
+        for(FarmProduct product: listOfProducts) {
+            if (product == null) {
+                product = productIn;
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean removeProduct(FarmProduct productIn) {
+        for (int i = 0; i < listOfProducts.length; i++) {
+            if (listOfProducts[i] == productIn) {
+                FarmProduct[] newListOfProducts = new FarmProduct[maxNumberOfProducts];
+                for (int k = 0; k < listOfProducts.length; k++) {
+                    if (i == k) {
+                        i++;
+                    }
+                    else {
+                        newListOfProducts[k] = listOfProducts [i];
+                    }
+                }
+                listOfProducts = newListOfProducts;
+                return true;
+            }
+        }
+        return false;
+
+    }
+    public String getProducts() {
+        String list = "";
+        int counter = 1;
+        for (FarmProduct product: listOfProducts) {
+            list += counter + " " + product.getDescription() + "\n";
+            counter++;
+        }
+        return list;
+
+    }
+
+    public double getCost() {
+        double cost = 0;
+        for (FarmProduct product: listOfProducts) {
+            cost += product.getCost();
+        }
+        return cost;
+    }
+}

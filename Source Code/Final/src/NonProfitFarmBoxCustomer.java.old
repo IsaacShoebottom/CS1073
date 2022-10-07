@@ -1,0 +1,29 @@
+public class NonProfitFarmBoxCustomer extends FarmBoxCustomer {
+    String dropOffLocation;
+    public NonProfitFarmBoxCustomer (int numberOfFamilies, String dropOffLocation) {
+        super(numberOfFamilies);
+        this.dropOffLocation = dropOffLocation;
+    }
+    public NonProfitFarmBoxCustomer (int numberOfFamilies) {
+        super(numberOfFamilies);
+    }
+
+    public String getDropOffLocation() {
+        return dropOffLocation;
+    }
+
+    public void setDropOffLocation(String dropOffLocation) {
+        this.dropOffLocation = dropOffLocation;
+    }
+
+    @Override
+    public double getCost() {
+        double beforeCost = super.getCost();
+        beforeCost = beforeCost * 0.85;
+
+        if (dropOffLocation != null)
+            beforeCost += 12.75;
+
+        return beforeCost;
+    }
+}

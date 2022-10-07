@@ -1,0 +1,8 @@
+car1:
+    Model: 2020 Honda Civic LX Automatic
+    Fuel Efficiency: 7.1 L/100km
+    Gas Left: 34.6312 L
+car2:
+    Model: 2020 Ford F-150 XLT Automatic
+    Fuel Efficiency: 10.7 L/100km
+    Gas Left: 75.56384 L
